@@ -33,7 +33,7 @@ register_activation_hook( __FILE__, 'display_copyright_install');
 register_deactivation_hook( __FILE__, 'display_copyright_remove' );
 function display_copyright_install() {
     /* Add a record to the wp_options table of the database, with the second parameter as the default */
-    add_option("display_copyright_text", "<p> Notice: All articles of this site are original, if reproduced please indicate the source!</p>", ' ', 'yes');
+    add_option("display_copyright_text", "<p style='color:#ff0d00'> Notice: All articles of this site are original, if reproduced please indicate the source!</p>", ' ', 'yes');
 }
 function display_copyright_remove() {
     /* Delete the corresponding record in the wp_options table */
